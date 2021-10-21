@@ -15,6 +15,6 @@
 <body>
     {% block content %}{% endblock %}
     <h2>Hello {{name}} !</h2>
-    {% include '_footer.html.twig' %}
+    {% block footer %}{% include '_footer.html.twig' %}{% endblock %}
 </body>
 </html>
